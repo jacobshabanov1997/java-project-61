@@ -7,9 +7,6 @@ application {
     mainClass = 'hexlet.code.App'
 }
 
-compileJava {
-    options.release = 21
-}
 
 group = 'hexlet.code'
 version = '1.0-SNAPSHOT'
@@ -25,6 +22,14 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+compileJava {
+    options.release = 21
+}
+
+run {
+    standardInput = System.in
 }
 
 
